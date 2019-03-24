@@ -1,0 +1,10 @@
+<div>
+	<label>Título</label>
+	<input [(ngModel)]="tareaAux.titulo" type="text">
+	<label>Descripción</label>
+	<textarea cols="30" rows="10" [(ngModel)]="tareaAux.descripcion"></textarea>
+
+	<button (click)="enviarTarea()" type="submit" class="boton">¿COMPLETA?</button>
+</div>
+
+<!-- {{ tareaAux | json }}  ver en tiempo real los datos que se están incorporando al json-->

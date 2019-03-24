@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tarea } from './models/tarea.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ToDo';
+  
+  //tareaPrueba: Tarea
+  listaTareas: Tarea[]
+
+  constructor() {
+  	//this.tareaPrueba = new Tarea ('Titulo de prueba', 'Descripcion de prueba')
+  	this.listaTareas = []
+  }
+
+  agregarTarea($event){
+  	this.listaTareas.push($event)
+  }
 }

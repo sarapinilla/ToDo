@@ -1,0 +1,10 @@
+<div [ngClass]="{completa: tarea.completa , incompleta: !tarea.completa }">
+	<h3>
+		{{ tarea.titulo }}
+	</h3>
+	<p>
+		{{ tarea.descripcion }}
+	</p>
+
+	<button (click)="cambiarCompleta()">COMPLETA / INCOMPLETA</button>
+</div>
